@@ -1,0 +1,6 @@
+<h1>글보기</h1>
+<p>제목 : <%= @post.title %></p>
+<p>내용 : <%= @post.content %></p>
+<img src="<%= @post.avatar %>"></p>
+<a href="/posts/edit/<%= @post.id %>">[수정]</a>
+<a data-confirm="진짜 삭제 하실거에요?" href="/posts/destroy/<%= @post.id %>">[삭제]</a>
